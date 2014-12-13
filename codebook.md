@@ -12,9 +12,9 @@ The original data comes from http://archive.ics.uci.edu/ml/datasets/Human+Activi
 #Generated Tidy Dataset
 
 1. ```tidy.csv``` is comprised of 180 observations and 20 variables
-2. The first variable, ```subject.id``` identifies the subject for that row data. There are 30 subjects in total.
+2. The first variable, ```subject.id``` identifies the subject for that row data. There are 30 subjects in total.g
 3. The second variabe, ```activity.name``` denotes the activity performed by the subject. The six activities are walking, walking_upstairs, walking_downstairs, sitting, standing, and laying.
-4. For this project, we were only intersted in the mean and std measurements from the dataset, which left us with 19 columns. Note that specific X, Y and Z mean and std were removed from the dataset because the project instructions were ambiguous in this regard. Therefore, I took only the "pure" mean and std measurements.
+4. For this project, we were only intersted in the mean and std measurements from the dataset, which left us with 66 columns of observations and 68 columns in total.
 5. From the original dataset, "t" has been rewritten to "time" and "f" has been rewritten to "freq" to make the column headers more readable.
 6. Finally, this data was grouped by ```subject.id``` and ```activity.name``` and the mean function applied, so that we are looking at the aggregated averages of multiple measurements by the groupings above.
 

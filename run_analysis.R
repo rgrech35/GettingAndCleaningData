@@ -23,11 +23,10 @@ train.y <- read.table("train/y_train.txt", sep=" ", stringsAsFactors = FALSE,
 #keep only pure mean and standard deviation columns from .x tables
 test.x <- test.x[,grep("std|mean", colnames(test.x))]
 test.x <- test.x[,-grep("meanFreq", colnames(test.x))]
-test.x <- test.x[,-grep("X|Y|Z", colnames(test.x))]
 
 train.x <- train.x[,grep("std|mean", colnames(train.x))]
 train.x <- train.x[,-grep("meanFreq", colnames(train.x))]
-train.x <- train.x[,-grep("X|Y|Z", colnames(train.x))]
+
 
 
 #merge data
